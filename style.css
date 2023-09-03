@@ -1,0 +1,320 @@
+/* -------------Global CSS ------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.box{
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
+.light{
+    border: none;
+    background-color: white;
+    color:#440099;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: fit-content;
+    border-radius: 3px;
+}
+
+.dark{
+    border: none;
+    background-color:#440099;
+    color:white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: fit-content;
+    border-radius: 3px;
+}
+
+ul{
+    display: flex;
+    list-style:none ;
+}
+
+.heading{
+    font-weight:100;
+    margin-block: 25px;
+}
+
+p{
+    line-height: 1.5;
+}
+h2{
+    font-weight: 100;
+}
+
+/* ----------nav------------ */
+
+nav{
+    padding: 15px 20px 10px 25px;
+}
+
+nav ul{
+    align-items: center;
+    font-size: 14px;
+    gap: 37px;
+    font-weight: bold;
+}
+
+/* ------------BackGround Video section------------- */
+
+.video{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+video{
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video h1,.video p{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.video p{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+/* ---------Hero Section--------------*/
+
+.hero{
+    position: relative;
+    bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.giftCard{
+    width: fit-content;
+    margin-inline: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.text{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    position: absolute;
+}
+.text h2{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: #440099;
+}
+.text a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.text h3:last-child{
+    margin-top: auto;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 7px;
+}
+.banner{
+    text-align: center;
+    background-color:#440099;
+    color: white;
+    padding-block: 33px;
+}
+
+/* --------------Reservation Section--------------- */
+
+.reservation{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.upSection{
+    display: flex;
+    height: 433px;
+}
+
+.leftImage,.rightImage,.rightImage img,.leftImage img
+{
+    height: inherit;
+}
+
+.downSection{
+    display: flex;
+}
+
+.downSection div:nth-child(n){
+    width: 33.33%;
+}
+
+.mid img{
+    width: 100%;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-image: linear-gradient(to right top, #a0a0a0, #acacac, #b8b8b8, #c4c4c4, #d0d0d0);
+}
+
+.last{
+    background-color: #440099;
+    color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 60px;
+}
+
+/* -----------Cant Section------------- */
+
+.bigPoster img{
+    width: 100%;
+    transition: 1s ease;
+    margin-bottom: 0px;
+}
+.bigPoster img:hover{
+    transform: scale(1.1);
+}
+.bigPoster {
+    position: relative;
+    overflow: hidden;
+}
+.bigPoster div{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    top: 0px;
+    padding: 40px;
+}
+
+
+
+/* -----------Three Images------------- */
+
+.threeImage{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.magic{
+    width: 32%;
+    position: relative;
+    overflow: hidden;
+}
+.magic img{
+    width: 100%;
+    transition: 1s ease;
+}
+.magic div{
+    position: absolute;
+    top: 0px;
+    padding: 40px;
+    text-align: center;
+}
+.cant .magic{
+    width: 33.33%;
+}
+.full{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+/* ----------------Question Section------------ */
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(245, 245, 245);
+    padding-inline: 50px;
+    margin-top: 30px;
+}
+
+.question a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #1270a3;
+}
+
+.question a:hover{
+    text-decoration: underline;
+}
+
+.magic img:hover{
+    transform: scale(1.1);
+}
+
+
+/* ----------------Footer--------------- */
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 50px;
+}
+
+.levelOne,.levelTwo,.levelThree{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.levelOne{
+    width: 100%;
+    gap: 30px;
+    font-weight: bold;
+    justify-content: flex-start;
+}
+
+.levelOne li:nth-child(5){
+    margin-left: auto;
+}
+
+.levelThree{
+    font-size: 12px;
+    width: 100%;
+}
+
+.levelThree ul{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.subFooter{
+    font-size: 12px;
+}
